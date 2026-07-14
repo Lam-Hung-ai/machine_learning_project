@@ -124,14 +124,21 @@ After the data has been cleaned and standardized, the final step is to split it.
 
 - Clone the repository. Open a terminal in your working directory and run:
 
-```cmd
+```bash
 git clone https://github.com/Lam-Hung-ai/machine_learning_project.git
+cd machine_learning_project
 ```
 
-- Install the required libraries. Open a terminal in the project directory and run:
+- Synchronize the project environment and install the required dependencies using `uv`:
 
-```cmd
-pip install -r requirements.txt
+```bash
+uv sync
 ```
 
-- Run all cells in `main.ipynb`.
+- Launch Jupyter Lab with `uv`:
+
+```bash
+uv run --with jupyter jupyter lab main.ipynb
+```
+
+- Open `main.ipynb` and run all cells.
